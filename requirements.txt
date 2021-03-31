@@ -1,0 +1,9 @@
+cmake==3.18.4
+keras==2.4.3
+streamlit==0.78.0
+tensorflow==2.4.1
+numpy==1.19.5
+opencv-contrib-python==4.5.1.48
+matplotlib==3.4.0
+imutils==0.5.4
+dlib==19.21.1
