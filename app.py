@@ -16,7 +16,7 @@ def load_model():
     """
     function to load and cache object detector
     """
-    model = keras.models.load_model(f'model\\model.h5', custom_objects={'LeakyReLU': keras.layers.LeakyReLU()})
+    model = keras.models.load_model(f'/app/model/model.h5')
     
     return model
 
@@ -137,6 +137,6 @@ with col1:
             width=280)
 with col2:
     st.header("From a live video")
-    video_file = open('demo\\video.mp4', 'rb')
+    video_file = open('/app/demo/video.mp4', 'rb')
     video_bytes = video_file.read()
     st.video(video_bytes)
